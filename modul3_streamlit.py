@@ -170,7 +170,7 @@ analysis_option = st.sidebar.selectbox(
 @st.cache_data
 def load_data():
     try:
-        df = pd.read_csv('D:/4. Kuliah/SEM 6/BahasaAlami/TextSummary/Text_Summarization_Similarity_Clustering/Text_Summarization_Similarity_Clustering/data/train_preprocess.csv')
+        df = pd.read_csv('./data/train_preprocess.csv')
         return df
     except:
         st.error(
